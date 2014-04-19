@@ -1,0 +1,50 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf230
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11480\viewh9860\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 Algorithm.\
+step 1. Make coins_sum number of coins with  value 1.\
+step 2. Turn 2 coins with value 2^i into a coin with 2^(i+1)\
+step 3. Repeat procedure 2 (coins_sum - coins_count) times.\
+\
+Lemma 1. The result produced by the above algorithm is a solution.\
+In order for the result to be a solution, it has to meet 2 criteria.\
+1) The coins should have total sum of coins_sum\
+2) The number of coins should be coins_count\
+\
+Proof for criteria 1)\
+By procedure 1, we start with coins whose total sum equals coins_sum.\
+(coins_sum * 1 = coins_sum.  For example, if we coins_sum = 5, we start with 5 coins with value 1)\
+Since step 2 does not change the total sum, the result will sum up to coins_sum.\
+\
+Proof for criteria 2)\
+Every time we execute step 2, the total number of coins decreases by 1.\
+There are coins_sum number of coins initially, and we execute step 2 (coins_sum - coins_count) times.\
+At the end, the total number of coins \
+= coins_sum - 1 * (coins_sum - coins_count)\
+= coins_sum - coins_sum + coins_count\
+= coins_count\
+\
+Lemma 2. The result is the lexicographically smallest one.\
+Proof by contradiction.\
+Our solution looks like below\
+Series of 0's and 1's + one or two arbitrary number + 0's\
+Assume that there is a lexicographically smaller result than our solution.\
+Let the smaller result =  B(better) , and our result = S (Solution).\
+If B exists, then there are two possibilities \
+1) B differs from S in Series of 0's and 1's\
+2) B differs from S in two arbitrary numbers\
+Let's call i = position where B differs from S\
+In case 1), \
+S[i] = 1, and B[i] = 0 (If S[i] = 0, B[i] has to be 0, otherwise B cannot be lexicographically smaller).\
+According to lemma 1, S is a solution.\
+So sum of S = sum of B.\
+However, B differs from S in position i, meaning B is smaller than S by 2^i at this point, and needs to make up for this by some number of coins at position j > i.\
+Let k = number of coins. k has to be an integer.\
+There is no why k * j = i if k is an integer and j > i.\
+So case 1) cannot be true.\
+\
+In case 2),\
+same argument applies to this case. Number of coins also will not match between S and B.}

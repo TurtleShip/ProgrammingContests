@@ -1,0 +1,5 @@
+# Ignore OS X stuff
+.DS_Store
+
+# Ignore compiled files
+*.class

@@ -1,0 +1,5 @@
+Case 1: A+ {AB+, AB-, B+, B-} B+
+Case 2: A+ {AB+, AB-, B+, B-} B-
+Case 3: O+ {AB+, AB-, B+, B-} B+
+Case 4: AB- {A+, AB+, B+} AB+
+Case 5: AB- {A+, A-, AB+, AB-, B+, B-} AB-

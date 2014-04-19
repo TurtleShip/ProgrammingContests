@@ -1,0 +1,36 @@
+Try 0
+list of 2 primes. Found : 774
+list of 3 primes. Found : 6156
+list of 4 primes. Found : 30590
+list of 5 primes. Found : 105227
+list of 6 primes. Found : 267200
+list of 7 primes. Found : 524888
+list of 8 primes. Found : 830477
+list of 9 primes. Found : 1102080
+list of 10 primes. Found : 1282126
+list of 11 primes. Found : 1369700
+list of 12 primes. Found : 1399964
+^C
+
+real	14m46.634s
+user	14m32.413s
+
+
+Try 1
+list of 2 primes. Found : 774
+list of 3 primes. Found : 6156
+list of 4 primes. Found : 30590
+list of 5 primes. Found : 105227
+list of 6 primes. Found : 267200
+list of 7 primes. Found : 524888
+list of 8 primes. Found : 830477
+list of 9 primes. Found : 1102080
+^C
+
+real	5m11.998s
+user	5m8.851s
+sys	0m2.747s
+
+
+
+Pre-processing for the whole batch starts at 1:41pm

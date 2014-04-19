@@ -1,0 +1,16 @@
+A key fact to keep in mind is that
+you want to minimize the number of miss.
+One way to achieve this effect is to make the configuration
+of each jar the same as much as possible so that you
+can assume that each jar is identical as much as possible.
+
+For example, let's look at case #3.
+There are 3 jars, 4 coins, and we want to get all 4 coins.
+The optimal strategy is to put 2 coins each to 2 jars.
+Then we have two jars with 2 coins, and 1 jar with no coins.
+Then we only need to miss once when we pick the jar with
+no coins.
+
+Notice that there is another configuration that haves
+2 jar with 1 coin and 1 jar with 2 coins.
+However in this case, you need to miss

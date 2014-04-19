@@ -1,0 +1,24 @@
+Basic algorithm
+
+Say that we have all possible pairs of coprime pairs.
+
+vector< vector<int> >cop[N];
+
+cop[i] = vector< vector<int> >
+	   = list of all possible coprime pairs of size i
+
+res = 0
+part0 = 0
+part1 = 0
+Given N grandchidren, 
+1) Add the minimum number to each Ai so that each Ai is a multiple of K.
+  part0 += all the minimum numbers.
+2) Divide each Ai by K.
+3) Now we have a new version of Ai's.
+4) Compare the list of A with all lists in cop[N]
+   For each cop[N][i],
+   	if all Aj can become cop[N][i][j] by adding values to Aj,
+   		part1 = min(part1, all the added values)
+
+
+res = part0 + K*part1

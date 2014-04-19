@@ -1,0 +1,11 @@
+isWon takes
+16 + 16 + 4 + 4
+= 40
+
+Each iteration
+40 + 40 + 16  = 96
+
+The entire program
+1000 * 96 = 96000 
+
+Small enough

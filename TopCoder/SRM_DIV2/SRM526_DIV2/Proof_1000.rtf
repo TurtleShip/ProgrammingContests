@@ -1,0 +1,29 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf230
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 Let's define function getSum(int num) to return sum of luckiness <= num\
+\
+The theSum(int A, int B) = getSum(B) - getSum(A+1)\
+\
+Let's think how we can make getSum(int num) to work.\
+\
+Let D = number of digits in num.\
+0 <= (n4 + n7) <= D\
+We can fit in n4 4's and n7 7's in num.\
+Then sum of luckiness will be\
+abs(n4 - n7) * C(n4, D) * (n7, D - n4) * 8^(D - n4 - n7) => Formula 1\
+\
+The problem is, how can we ensure that numbers we get from above is smaller than num.\
+We iterate each position i in num from highest(0) to lowest(D-1).\
+Assume S = number smaller than num.\
+Then S differs from num at position i.\
+We find that position i, and try number d  < num[i]\
+\
+Then at each iteration, let number of available digits = avail\
+avail = D - i(previous same digits) - 1(current digit)\
+Use Formula 1 using avail.\
+\
+Also, keep track of how many n4 and n7 you can use by checking num[i] and d.}

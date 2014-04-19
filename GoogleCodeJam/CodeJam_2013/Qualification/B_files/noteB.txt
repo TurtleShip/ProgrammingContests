@@ -1,0 +1,11 @@
+For each number,
+2 * 100 * 100 = 20,000
+
+There are 100 numbers per case
+20,000 * 100 = 2,000,000
+
+There are 100 cases
+100 * 2,000,000
+= 200,000,000
+
+Small enough cuz it is smaller than 2 billion

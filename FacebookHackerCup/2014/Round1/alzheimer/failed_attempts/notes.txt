@@ -1,0 +1,31 @@
+So I understand up to the part that a loose upperbound we can have is using at most 35 primes and the maximum number an element can be is 149, which is the 35th prime.
+
+
+For now, let's forget about reducing the 35 primes to lower number like the Facebook post suggested. 
+
+2* 47 = 94
+3 * 43 = 129
+5 * 29 = 145
+7 * 17 = 119
+
+
+Two states DP(mask1, i) and DP(mask2, i+1) are neighbours if there exists a number A >= B, where B is the i+1th number, where the primes in A are not represented in mask1 and mask2 = mask1 | (mask_of_primes_from_A). The cost of the transition is A - B.
+
+You will get the solution by finding min(DP(mask, N-1)) for each possible mask, and subtracting the sum of the original array.
+
+
+The runtime of this DP is O(|mask| * |N| * |C|) where
+|mask| = the size of bitmask
+|N| = the number of children
+|C| = time it takes to find a number 'A' described in facebook.
+
+Note that to find a number 'A',
+we try all 1 < A < 150.
+For each A, it will take O(1) to check if A is in the prime set if we pre-calculate A so that
+prime_rep[A] = bits representing prime elements of A
+Then A is valid if
+mask1 & A == 0
+
+
+s
+
