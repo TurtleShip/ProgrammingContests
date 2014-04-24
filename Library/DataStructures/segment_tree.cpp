@@ -5,6 +5,12 @@
 #include <cassert>
 using namespace std;
 
+/*
+Modeled after sample code in Competitive Programming by Steven and Felix Halim.
+Chapter 2 of the below site contains segment_tree.cpp that this class modeled
+after.
+https://sites.google.com/site/stevenhalim/home/material
+*/
 template<class T>
 class SegmentTree {
 
