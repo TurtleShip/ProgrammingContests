@@ -98,6 +98,19 @@ string getZodiac(Date date) {
 	return "capricorn";
 }
 
+/*
+	Converts second 'sec' into HH:MM:SS format.
+	Use this function, and do printf("%2d:%2d:%2d\n", HH, MM ,SS);
+*/
+void convert_sec_to_time(int sec, int& HH, int& MM, int& SS) {
+	SS = sec % 60;
+	sec -= SS;
+	sec /= 60;
+	MM = sec % 60;
+	HH = sec / 60;
+}
+
+
 int main() {
 	
 	return 0;

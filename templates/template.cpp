@@ -39,6 +39,17 @@ int cmp(double x, double y = 0, double tol = EPS) {
 	return (x <= y + tol) ? (x + tol < y) ? -1 : 0 : 1;
 }
 
+// Removes duplicates in the given vector.
+// Note that the ORDER of elements is NO LONGER preserved.
+template<typename T>
+void makeUnique(vector<T>& V) {
+	sort(V.begin(), V.end());
+	V.resize( distance(V.begin(), unique(V.begin(), V.end())));
+}
+
+// Readline using scanf : scanf("%[^\n]\n", input);
+
+
 int main() {
 
 }

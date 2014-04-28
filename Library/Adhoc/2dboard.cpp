@@ -1,4 +1,7 @@
 #include <cstdio>
+#include <vector>
+#include <string>
+#include <iostream>
 using namespace std;
 
 /*
@@ -38,7 +41,30 @@ Dir turnRight(Dir cur) {
 	return north; // cur == west
 }
 
+// Given a SQUARE board ( N by N ), rotate the board 90 degrees clockwise.
+template<typename T>
+void rotate90(vector<T>& board) {
+	int N = board.size();
+	vector<T> copied(board.begin(), board.end());
 
+	for(int r=0; r < N; r++) {
+		for(int c=0; c < N; c++) {
+			board[c][N-1-r] = copied[r][c];
+		}
+	}
+}
+
+template<typename T>
+void printBoard(vector<T>& board) {
+	int R = board.size();
+	int C = board[0].size();
+	for(int r=0; r < R; r++) {
+		for(int c=0; c < C; c++) {
+			cout<<board[r][c];
+		}
+		cout<<endl;
+	}
+}
 
 int main() {
 
