@@ -43,7 +43,7 @@ Dir turnRight(Dir cur) {
 
 // Given a SQUARE board ( N by N ), rotate the board 90 degrees clockwise.
 template<typename T>
-void rotate90(vector<T>& board) {
+void rotate90(vector< vector<T> >& board) {
 	int N = board.size();
 	vector<T> copied(board.begin(), board.end());
 
@@ -55,7 +55,7 @@ void rotate90(vector<T>& board) {
 }
 
 template<typename T>
-void printBoard(vector<T>& board) {
+void printBoard(vector< vector<T> >& board) {
 	int R = board.size();
 	int C = board[0].size();
 	for(int r=0; r < R; r++) {
