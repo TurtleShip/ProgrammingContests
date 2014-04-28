@@ -66,6 +66,44 @@ void printBoard(vector< vector<T> >& board) {
 	}
 }
 
+/*
+  Returns N by N spiral board.
+  5 by 5 spiral board looks like this.
+  13 12 11 10 25
+  14 3  2  9  24
+  15 4  1  8  23
+  16 5  6  7  22
+  17 18 19 20 21
+*/
+vector< vector<int> > makeSprial(int N) {
+	assert(N%2 == 1); // N must be odd
+  vector< vector<int> >board(N, vector<int>(N, 0));
+	Dir dir[5]  = {north, west, south, east, north};
+	int walk[5] =  {1,1,2,2,2};
+	int delta[5] = {0,2,2,2,2};
+	int curR = N/2;
+	int curC = N/2;
+	int num = 1;
+	board[curR][curC] = num++;
+	while(num < N*N) {
+		// do the walk
+		for(int i=0; i < 5; i++) {
+			for(int j=0; j < walk[i]; j++) {
+				curR += dir[i].dr;
+				curC += dir[i].dc;
+				board[curR][curC] = num++;
+			}
+		}
+
+		// update walk
+		for(int i=0; i < 5; i++)
+			walk[i] += delta[i];
+	}
+
+  return board;
+}
+
+
 int main() {
 
 	return 0;
