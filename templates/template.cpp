@@ -49,6 +49,8 @@ void makeUnique(vector<T>& V) {
 
 // Readline using scanf : scanf("%[^\n]\n", input);
 
+// print 4 decimal places ( need to #include <iomanip> )
+// cout<<fixed<<setprecision(4)<<doubleValue<<endl;
 
 int main() {
 
