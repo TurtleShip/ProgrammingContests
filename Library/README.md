@@ -9,10 +9,9 @@ This is a collection of classes and methods that can come handy during programmi
 - [Chess](Adhoc/chess.cpp)
 - [Rock Scissor Paper](rock_scissor_paper.cpp)
 
-
-## [Number Theory](NumberTheory)
-- [GCD, LCM, isPrime, Pascal table, Sieve of Eratosthenes](NumberTheory/number_theory.cpp)
-
+## [Math](Math)
+- [Number Theory](Math/number_theory.cpp)
+- [Gaussian Elimination](Math/gaussian_elimination.cpp)
 
 ## [Data Structures](DataStructures)
 - [Segment Tree](DataStructures/segment_tree.cpp)
