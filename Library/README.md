@@ -7,13 +7,14 @@ This is a collection of classes and methods that can come handy during programmi
 - [Bingo](Adhoc/bingo.cpp)
 - [Calender](Adhoc/calender.cpp)
 - [Chess](Adhoc/chess.cpp)
-- [Rock Scissor Paper](rock_scissor_paper.cpp)
+- [Rock Scissor Paper](Adhoc/rock_scissor_paper.cpp)
 
 ## [Math](Math)
 - [Number Theory](Math/number_theory.cpp)
 - [Gaussian Elimination](Math/gaussian_elimination.cpp)
 
 ## [Data Structures](DataStructures)
+- [Union Find Disjoint Set](DataStructures/union_find.cpp)
 - [Segment Tree](DataStructures/segment_tree.cpp)
 
 ## [String Manipulation](string_manipulations.cpp)
