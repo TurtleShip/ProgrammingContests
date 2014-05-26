@@ -16,6 +16,7 @@ This is a collection of classes and methods that can come handy during programmi
 ## [Data Structures](DataStructures)
 - [Union Find Disjoint Set](DataStructures/union_find.cpp)
 - [Segment Tree](DataStructures/segment_tree.cpp)
+- [Fenwick Tree](DataStructures/fenwick_tree.cpp)
 
 ## [String Manipulation](string_manipulations.cpp)
 Contains helper functions to manipulate strings.
