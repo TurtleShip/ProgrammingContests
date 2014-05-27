@@ -35,6 +35,12 @@ typedef vector<double> vd;
 typedef vector<vi> vvi;
 typedef long long LL;
 
+/*
+	returns
+	-1 : if x <= y
+	 0 : x == y
+	 1 : x > y
+*/
 int cmp(double x, double y = 0, double tol = EPS) {
 	return (x <= y + tol) ? (x + tol < y) ? -1 : 0 : 1;
 }
