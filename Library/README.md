@@ -1,8 +1,10 @@
 # Library
 This is a collection of classes and methods that can come handy during programming competitions.
 
+## [Helper](Helper)
+Contains general helper functions for different languages.
 
-##[Adhoc](Adhoc)
+## [Adhoc](Adhoc)
 - [2D board](Adhoc/2dboard.cpp)
 - [Bingo](Adhoc/bingo.cpp)
 - [Calender](Adhoc/calender.cpp)

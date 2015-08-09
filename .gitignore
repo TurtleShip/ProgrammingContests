@@ -3,3 +3,6 @@
 
 # Ignore compiled files
 *.class
+
+# Ignore IDE files
+.idea
