@@ -1,7 +1,7 @@
 # Programming Contests
 These are my solutions to various programming contests I have been participating. I've been keeping the solutions mainly for my own references, but please feel free to look around and ask me questions about my solutions.
 
-I also have [library](Library) and [templates](templates) that may come handy during competitions.
+I also have [library](Library) and [templates](Templates) that may come handy during competitions.
 
 
 
