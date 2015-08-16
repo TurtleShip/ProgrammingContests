@@ -4,6 +4,7 @@
 - 2dboard
   - UVa
     - [556 - Amazing ](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=497)
+    - [118 - Mutant Flatworld Explorers] ](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=54)
 
 
 - Bingo

@@ -5,7 +5,7 @@ This is a collection of classes and methods that can come handy during programmi
 Contains general helper functions for different languages.
 
 ## [Adhoc](Adhoc)
-- [2D board](Adhoc/2dboard.cpp)
+- [2D board](Adhoc/Board2D.cpp)
 - [Bingo](Adhoc/bingo.cpp)
 - [Calender](Adhoc/calender.cpp)
 - [Chess](Adhoc/chess.cpp)
