@@ -22,3 +22,6 @@ Contains general helper functions for different languages.
 
 ## [String Manipulation](string_manipulations.cpp)
 Contains helper functions to manipulate strings.
+
+## [Graph](Graph)
+- [Articulation bridge and points](Graph/Graph.java)
