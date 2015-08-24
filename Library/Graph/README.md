@@ -10,3 +10,6 @@ Contains the below topics
   - UVa
     - [315 - Network](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=251)
     -[796 - Critical Links](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=737)
+- Strongly Connected Components
+  - UVa
+    - [UVa 247 - Calling Circles](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=183)
