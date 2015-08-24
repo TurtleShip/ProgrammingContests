@@ -1,6 +1,9 @@
 # Graph
 Contains the below topics
+- Undirected graph
   - Finding articulation points and bridge
+- Directed graph
+  - Finding Strongly Connected Components
 
 ## Related problems
 - Articulation points and bridge

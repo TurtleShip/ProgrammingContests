@@ -24,4 +24,5 @@ Contains general helper functions for different languages.
 Contains helper functions to manipulate strings.
 
 ## [Graph](Graph)
-- [Articulation bridge and points](Graph/Graph.java)
+- [Articulation bridge and points](Graph/UndirectedGraph.java)
+- [Strongly Connected Components](Graph/DirectedGraph.java)
