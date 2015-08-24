@@ -22,6 +22,12 @@ class Graph {
         path = new Stack<>();
         adj = new ArrayList<>(N);
         scc = new ArrayList<>();
+        for (int i = 0; i < N; i++)
+            adj.add(new ArrayList<Integer>());
+    }
+
+    public void addEdge(int from, int to) {
+        adj.get(from).add(to);
     }
 
     /*
@@ -31,8 +37,7 @@ class Graph {
       */
     public List<List<Integer>> findSCC() {
         totalSteps = 0;
-        for (int i = 0; i < N; i++)
-            adj.add(new ArrayList<Integer>());
+
         Arrays.fill(steps, UNVISITED);
         Arrays.fill(isVisited, false);
         for (int i = 0; i < N; i++)
