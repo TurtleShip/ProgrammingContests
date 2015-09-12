@@ -30,6 +30,7 @@ class Graph {
 
     public Graph(int N, int M) {
         this.N = N;
+        this.M = M;
         this.edgeList = new ArrayList<>(M);
     }
 
