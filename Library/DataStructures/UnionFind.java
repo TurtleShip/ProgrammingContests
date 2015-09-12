@@ -1,6 +1,4 @@
-// Shameless copy from Competitive Programming 3
 class UnionFind {
-    //    private List<Integer> p, rank, setSize;
     private int[] p, rank, setSize;
     private int numSets;
 

@@ -60,7 +60,6 @@ class Graph {
 
 // https://github.com/TurtleShip/ProgrammingContests/blob/master/Library/DataStructures/UnionFind.java
 class UnionFind {
-    //    private List<Integer> p, rank, setSize;
     private int[] p, rank, setSize;
     private int numSets;
 
