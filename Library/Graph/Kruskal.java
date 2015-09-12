@@ -24,13 +24,11 @@ class Edge {
 
 class Graph {
     int N;
-    int R;
     PriorityQueue<Edge> edgeList;
 
 
-    public Graph(int N, int R) {
+    public Graph(int N) {
         this.N = N;
-        this.R = R;
         this.edgeList = new PriorityQueue<>(N, new Comparator<Edge>() {
             @Override
             public int compare(Edge o1, Edge o2) {
