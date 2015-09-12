@@ -16,6 +16,7 @@ Contains the below topics
 - MST
   - UVa
     - [11228 - Transportation system](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=2169)
+    - [11631 - Dark roads](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2678)
 - Strongly Connected Components
   - UVa
     - [UVa 247 - Calling Circles](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=183)
