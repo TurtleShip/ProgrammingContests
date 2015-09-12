@@ -1,7 +1,7 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.PriorityQueue;
 
 /*
     Kruskal Algorithm find a minimum spanning tree (MST) through greedy approach as below.
@@ -24,17 +24,13 @@ class Edge {
 
 class Graph {
     int N;
-    PriorityQueue<Edge> edgeList;
+    int M; // the number of edges
+    List<Edge> edgeList;
 
 
-    public Graph(int N) {
+    public Graph(int N, int M) {
         this.N = N;
-        this.edgeList = new PriorityQueue<>(N, new Comparator<Edge>() {
-            @Override
-            public int compare(Edge o1, Edge o2) {
-                return Double.compare(o1.weight, o2.weight);
-            }
-        });
+        this.edgeList = new ArrayList<>(M);
     }
 
     public void addEdge(Edge edge) {
@@ -42,17 +38,25 @@ class Graph {
     }
 
     public List<Edge> findMST() {
+        Collections.sort(edgeList, new Comparator<Edge>() {
+            @Override
+            public int compare(Edge o1, Edge o2) {
+                return Double.compare(o1.weight, o2.weight);
+            }
+        });
         UnionFind uf = new UnionFind(N);
-        int total = 0;
+
         ArrayList<Edge> res = new ArrayList<>(N - 1);
-        while (total < N) {
-            Edge edge = edgeList.poll();
+        for (final Edge edge : edgeList) {
             if (uf.isSameSet(edge.from, edge.to)) continue;
             res.add(edge);
             uf.unionSet(edge.from, edge.to);
-            total = uf.sizeOfSet(edge.from);
+            if (uf.numDisjointSets() == 1) break;
         }
-        return res;
+
+        if (uf.numDisjointSets() == 1) return res;
+        // we failed to find MST. It is possible that the graph is disconnected
+        throw new RuntimeException("Couldn't find MST");
     }
 
 }
