@@ -1,0 +1,2 @@
+This problem is really strict on both memory usage and time.
+Although both my Java code and C++ code used the same algorithm, only my C++ code passed due to Java itself being slightly slower than C++.

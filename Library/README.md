@@ -27,3 +27,4 @@ Contains helper functions to manipulate strings.
 - [Articulation bridge and points](Graph/UndirectedGraph.java)
 - [Strongly Connected Components](Graph/DirectedGraph.java)
 - [Minumum Spanning Tree - Kruskal](Graph/Kruskal.java)
+- [Detecting Negative Cycles - Bellman Ford](Graph/BellmanFord.java)
