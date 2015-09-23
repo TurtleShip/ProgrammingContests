@@ -4,6 +4,10 @@ This is a collection of classes and methods that can come handy during programmi
 ## [Helper](Helper)
 Contains general helper functions for different languages.
 
+- Java
+  - [Generating permutations](Helper/Java/NextPermutation.java)
+  - [Generating combinations](Helper/Java/Combination.java)
+
 ## [Adhoc](Adhoc)
 - [2D board](Adhoc/Board2D.cpp)
 - [Bingo](Adhoc/bingo.cpp)
