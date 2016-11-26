@@ -1,19 +1,49 @@
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.PrintWriter;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
+
+/*
+br = new BufferedReader(new FileReader("input.txt"));
+pw = new PrintWriter(new BufferedWriter(new FileWriter("output.txt")));
+br = new BufferedReader(new InputStreamReader(System.in));
+pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
+ */
 
 public class Main {
+    private static BufferedReader br;
+    private static StringTokenizer st;
+    private static PrintWriter pw;
 
-    public static void main(String[] args) {
-        final Scanner scanner = new Scanner(new BufferedInputStream(System.in));
-        final PrintWriter writer = new PrintWriter(new BufferedOutputStream(System.out));
+    public static void main(String[] args) throws IOException {
+        br = new BufferedReader(new InputStreamReader(System.in));
+        pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
+        pw.println();
+        pw.close();
+    }
 
-        int T = scanner.nextInt();
+    private static void exitImmediately()	{
+        pw.close();
+        System.exit(0);
+    }
 
-        for (int cid = 1; cid <= T; cid++) {
-            writer.printf("Case %d:\n", cid);
+    private static long readLong() throws IOException	{
+        return Long.parseLong(nextToken());
+    }
+
+    private static double readDouble() throws IOException	{
+        return Double.parseDouble(nextToken());
+    }
+
+    private static int readInt() throws IOException	{
+        return Integer.parseInt(nextToken());
+    }
+
+    private static String nextToken() throws IOException	{
+        while(st == null || !st.hasMoreTokens())	{
+            if(!br.ready())	{
+                exitImmediately();
+            }
+            st = new StringTokenizer(br.readLine().trim());
         }
-        writer.flush();
+        return st.nextToken();
     }
 }
